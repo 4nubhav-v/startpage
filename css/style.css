@@ -33,12 +33,13 @@ li {
   flex-wrap: wrap;
   padding: 20px;
 }
-h1 {
+h1,
+h2 {
   margin: 20px;
 }
 input {
   font-size: 16px;
-  magin: 8px;
+  margin: 8px;
 }
 button {
   padding: 4px;
