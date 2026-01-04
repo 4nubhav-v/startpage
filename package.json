@@ -1,0 +1,20 @@
+{
+  "name": "startpage",
+  "version": "1.0.0",
+  "description": "My startpage",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@codeberg.org/4nubhav/startpage.git"
+  },
+  "license": "ISC",
+  "author": "Anubhav :-P",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch & python3 -m http.server  --directory src 8080"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

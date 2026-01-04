@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Startpage</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex flex-col content-center justify-between text-white bg-[#282828] h-screen w-screen p-4"
+  >
+    <header class="text-gray-400 body-font">
+      <nav class="flex flex-row justify-between">
+        <ul class="flex gap-4">
+          <li id="weather"></li>
+          <li id="time"></li>
+          <li>
+            <a
+              class="text-white hover:text-[#c581dd]"
+              href="https://fast.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >speedtest</a
+            >
+          </li>
+        </ul>
+        <ul class="flex justify-between">
+          <li>
+            <a
+              class="text-white hover:text-[#c581dd]"
+              href="https://www.last.fm/user/lostglory_"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><i>lastfm</i></a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white hover:text-[#c581dd]"
+              href="http://127.0.0.1:8080"
+              rel="noopener noreferrer"
+              target="_blank"
+              >RSS</a
+            >
+          </li>
+          <li>
+            <a class="text-white hover:text-[#c581dd]" href="">Themes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1
+      class="p-5 m-5 flex flex-col content-center text-4xl font-bold text-center"
+    >
+      Welcome Anubhav &lt;/3
+    </h1>
+    <div class="flex flex-col items-center">
+      <label for="select-search">
+        <select name="engine" id="select-search">
+          <option value="google">Google</option>
+          <option value="ddg">Duckduckgo</option>
+          <option value="searx">SearXNG</option>
+          <option value="yan">Yandex</option>
+        </select>
+      </label>
+    </div>
+    <form
+      class="flex flex-col items-center"
+      action="https://www.google.com/search"
+      method="get"
+    >
+      <input
+        class="p-5 m-5 w-192 border-2 border-gray-500 rounded-md"
+        type="text"
+        name="q"
+        placeholder="type here"
+      />
+      <div class="flex justify-center content-center">
+        <button type="submit" class="p-4 hover:text-green-500">Search</button>
+        <button type="reset" class="p-4 hover:text-red-500">Reset</button>
+      </div>
+    </form>
+    <div class="sites flex flex-col flex-wraps items-center pb-18">
+      <ul class="grid grid-flow-col grid-rows-5 gap-4 flex flex-wraps">
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://web.whatsapp.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Whatsapp</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://mail.proton.me"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Protonmail</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://app.tuta.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Tutanota</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://wiki.archlinux.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            >archWiki</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://wiki.hypr.land/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >hyprWiki</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            rel="noopener noreferrer"
+            href="https://fmhy.pages.dev/"
+            target="_blank"
+            >FMHY</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https:/4chan.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >/g/</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://lainchan.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >lainchan</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://developer.mozilla.org/en-US/docs/Web"
+            rel="noopener noreferrer"
+            target="_blank"
+            >HTML/CSS</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://tailwindcss.com/docs/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Tailwind</a
+          >
+        </li>
+
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://roadmap.sh/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Roadmap</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://www.cloudskillsboost.google"
+            rel="noopener noreferrer"
+            target="_blank"
+            >googleCloud</a
+          >
+        </li>
+
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://music.youtube.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >ytMusic</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://bandcamp.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >bandcamp</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://letterboxd.com/lostglory_/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >letterboxd</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://enquiry.indianrail.gov.in/mntes/#"
+            rel="noopener noreferrer"
+            target="_blank"
+            >trainStats</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="http://127.0.0.1:8384/#"
+            rel="noopener noreferrer"
+            target="_blank"
+            >syncthing</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="http://192.168.1.1/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >wifiRouter</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://codeberg.org/"
+            target="_blank"
+            >codeburg</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://chatgpt.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >chatgpt</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://web.whatsapp.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >whatsapp</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://www.youtube.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >yt</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://www.linkedin.com/in/4nubhav"
+            rel="noopener noreferrer"
+            target="_blank"
+            >linkedin</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://github.com/4nubhav-v"
+            rel="noopener noreferrer"
+            target="_blank"
+            >github</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://codeberg.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >codeburg</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://amazon.in/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >amazon</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://store.steampowered.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Steam</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://steamdb.info/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >steamdb</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://www.protondb.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >protondb</a
+          >
+        </li>
+        <li class="links">
+          <a
+            class="text-white hover:text-[#c581dd]"
+            href="https://store.epicgames.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >epicGames</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://louisabraham.github.io/nekojs/neko.js"
+      data-autostart
+    ></script>
+    <script>
+      setInterval(() => {
+        document.getElementById("time").textContent =
+          new Date().toLocaleTimeString();
+      }, 1000);
+      async function updateWeather() {
+        try {
+          const res = await fetch("https://wttr.in/?format=%l:+%c+%t");
+          const text = await res.text();
+          document.getElementById("weather").textContent = text;
+        } catch (e) {
+          document.getElementById("weather").textContent =
+            "weather unavailable";
+        }
+      }
+
+      updateWeather();
+    </script>
+  </body>
+</html>

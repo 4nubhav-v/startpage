@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("BerkeleyMono-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("BerkeleyMono-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("BerkeleyMono-Italic.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+li {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.links {
+  text-align: center;
+}
