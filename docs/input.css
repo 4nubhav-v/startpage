@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@theme {
+  --color-gb-green: #98971a;
+  --color-gb-red: #cc241d;
+  --color-gb-bg: #282828;
+  --color-gb-blue: #458588;
+  --color-gb-gray: #a89984;
+  --color-gb-fg: #ebdbb2;
+}
 @font-face {
   font-family: "Berkeley Mono";
   src: url("fonts/BerkeleyMono-Regular.woff2") format("woff2");
