@@ -11,7 +11,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch & python3 -m http.server  --directory src 8080"
+    "dev": "npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css --watch & python3 -m http.server --directory docs 8080"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
