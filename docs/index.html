@@ -38,9 +38,8 @@
             <span class="cursor text-gb-green text-base"></span>
           </div>
 
-          <!-- Centre: time & weather (desktop) -->
+          <!-- Centre: time (desktop) -->
           <div class="hidden md:flex items-center gap-6 text-sm text-gb-gray">
-            <span id="weather"></span>
             <span id="time"></span>
           </div>
 
@@ -95,7 +94,6 @@
         <div id="mobile-menu" class="md:hidden border-t border-gb-bg1 mt-2">
           <div class="pt-2 pb-1 space-y-1 text-sm text-gb-gray">
             <div id="time-mobile" class="py-1"></div>
-            <div id="weather-mobile" class="py-1"></div>
             <a
               class="block py-1 hover:text-gb-green transition-colors"
               href="https://fast.com"
@@ -630,25 +628,6 @@
       }
       setInterval(updateTime, 1000);
       updateTime();
-
-      /* ── Weather ─────────────────────────────────────────── */
-      async function updateWeather() {
-        try {
-          const res = await fetch("https://wttr.in/?format=%l:+%c+%t");
-          const text = await res.text();
-          const el = document.getElementById("weather");
-          const elM = document.getElementById("weather-mobile");
-          if (el) el.textContent = text;
-          if (elM) elM.textContent = text;
-        } catch (_) {
-          const msg = "weather unavailable";
-          const el = document.getElementById("weather");
-          const elM = document.getElementById("weather-mobile");
-          if (el) el.textContent = msg;
-          if (elM) elM.textContent = msg;
-        }
-      }
-      updateWeather();
 
       /* ── Theme toggle ────────────────────────────────────── */
       const html = document.documentElement;
