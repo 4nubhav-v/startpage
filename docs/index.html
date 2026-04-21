@@ -4,20 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Startpage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
     <link rel="manifest" href="favicons/site.webmanifest" />
     <link href="output.css" rel="stylesheet" />
   </head>
 
   <body class="bg-gb-bg text-gb-fg min-h-screen flex flex-col">
-
     <!-- ── Navbar ──────────────────────────────────────────── -->
-    <nav class="sticky top-0 z-50 bg-gb-bg-hard border-b border-gb-bg1 backdrop-blur-sm">
+    <nav
+      class="sticky top-0 z-50 bg-gb-bg-hard border-b border-gb-bg1 backdrop-blur-sm"
+    >
       <div class="max-w-7xl mx-auto px-4 py-3">
         <div class="flex items-center justify-between">
-
           <!-- Logo -->
           <div class="flex items-center gap-1 select-none">
             <span class="text-gb-green font-bold text-base">~/startpage</span>
@@ -33,25 +47,45 @@
           <!-- Right: nav links + theme toggle + hamburger -->
           <div class="flex items-center gap-3">
             <div class="hidden md:flex items-center gap-4 text-sm">
-              <a class="text-gb-gray hover:text-gb-green transition-colors duration-150"
-                 href="https://fast.com" target="_blank" rel="noopener noreferrer">speedtest</a>
-              <a class="text-gb-gray hover:text-gb-green transition-colors duration-150"
-                 href="https://www.last.fm/user/lostglory_" target="_blank" rel="noopener noreferrer"><i>lastfm</i></a>
-              <a class="text-gb-gray hover:text-gb-green transition-colors duration-150"
-                 href="http://127.0.0.1:8080" target="_blank" rel="noopener noreferrer">RSS</a>
+              <a
+                class="text-gb-gray hover:text-gb-green transition-colors duration-150"
+                href="https://fast.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >speedtest</a
+              >
+              <a
+                class="text-gb-gray hover:text-gb-green transition-colors duration-150"
+                href="https://www.last.fm/user/lostglory_"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i>lastfm</i></a
+              >
+              <a
+                class="text-gb-gray hover:text-gb-green transition-colors duration-150"
+                href="http://127.0.0.1:8080"
+                target="_blank"
+                rel="noopener noreferrer"
+                >RSS</a
+              >
             </div>
 
             <!-- Dark / Light toggle -->
-            <button id="theme-toggle"
-                    class="p-2 rounded-md text-gb-gray hover:text-gb-yellow hover:bg-gb-bg1 transition-all duration-200"
-                    title="Toggle light / dark theme" aria-label="Toggle theme">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-md text-gb-gray hover:text-gb-yellow hover:bg-gb-bg1 transition-all duration-200"
+              title="Toggle light / dark theme"
+              aria-label="Toggle theme"
+            >
               <span id="theme-icon">☀</span>
             </button>
 
             <!-- Mobile hamburger -->
-            <button id="mobile-menu-btn"
-                    class="md:hidden p-2 rounded-md text-gb-gray hover:text-gb-green transition-colors duration-150"
-                    aria-label="Open menu">
+            <button
+              id="mobile-menu-btn"
+              class="md:hidden p-2 rounded-md text-gb-gray hover:text-gb-green transition-colors duration-150"
+              aria-label="Open menu"
+            >
               <span class="text-lg leading-none">☰</span>
             </button>
           </div>
@@ -60,26 +94,47 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden border-t border-gb-bg1 mt-2">
           <div class="pt-2 pb-1 space-y-1 text-sm text-gb-gray">
-            <div id="time-mobile"    class="py-1"></div>
+            <div id="time-mobile" class="py-1"></div>
             <div id="weather-mobile" class="py-1"></div>
-            <a class="block py-1 hover:text-gb-green transition-colors"
-               href="https://fast.com" target="_blank" rel="noopener noreferrer">speedtest</a>
-            <a class="block py-1 hover:text-gb-green transition-colors"
-               href="https://www.last.fm/user/lostglory_" target="_blank" rel="noopener noreferrer"><i>lastfm</i></a>
-            <a class="block py-1 hover:text-gb-green transition-colors"
-               href="http://127.0.0.1:8080" target="_blank" rel="noopener noreferrer">RSS</a>
+            <a
+              class="block py-1 hover:text-gb-green transition-colors"
+              href="https://fast.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >speedtest</a
+            >
+            <a
+              class="block py-1 hover:text-gb-green transition-colors"
+              href="https://www.last.fm/user/lostglory_"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i>lastfm</i></a
+            >
+            <a
+              class="block py-1 hover:text-gb-green transition-colors"
+              href="http://127.0.0.1:8080"
+              target="_blank"
+              rel="noopener noreferrer"
+              >RSS</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
     <!-- ── Hero Section ────────────────────────────────────── -->
-    <section class="relative py-12 px-4 text-center animate-fade-in overflow-hidden">
+    <section
+      class="relative py-12 px-4 text-center animate-fade-in overflow-hidden"
+    >
       <!-- Ambient blobs -->
-      <div aria-hidden="true"
-           class="absolute top-0 left-1/4 w-72 h-72 bg-gb-green/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div aria-hidden="true"
-           class="absolute top-0 right-1/4 w-72 h-72 bg-gb-blue/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div
+        aria-hidden="true"
+        class="absolute top-0 left-1/4 w-72 h-72 bg-gb-green/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="absolute top-0 right-1/4 w-72 h-72 bg-gb-blue/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
 
       <div class="relative z-10">
         <h1 class="text-4xl md:text-5xl font-bold mb-2">
@@ -92,10 +147,14 @@
         <div class="flex flex-col items-center gap-4 max-w-2xl mx-auto">
           <!-- Engine selector -->
           <div class="flex items-center gap-2">
-            <label for="select-search" class="text-gb-gray text-sm sr-only">Search engine</label>
-            <select id="select-search" name="engine"
-                    class="bg-gb-bg-soft text-gb-fg border border-gb-bg2 rounded-md px-3 py-1 text-sm
-                           focus:border-gb-green focus:outline-none transition-colors duration-200 cursor-pointer">
+            <label for="select-search" class="text-gb-gray text-sm sr-only"
+              >Search engine</label
+            >
+            <select
+              id="select-search"
+              name="engine"
+              class="bg-gb-bg-soft text-gb-fg border border-gb-bg2 rounded-md px-3 py-1 text-sm focus:border-gb-green focus:outline-none transition-colors duration-200 cursor-pointer"
+            >
               <option value="google">Google</option>
               <option value="ddg">DuckDuckGo</option>
               <option value="searx">SearXNG</option>
@@ -104,24 +163,40 @@
           </div>
 
           <!-- Search form -->
-          <form id="search-form" class="w-full flex flex-col items-center gap-3"
-                action="https://www.google.com/search" method="get">
+          <form
+            id="search-form"
+            class="w-full flex flex-col items-center gap-3"
+            action="https://www.google.com/search"
+            method="get"
+          >
             <div class="relative w-full">
-              <span aria-hidden="true"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 text-gb-gray text-sm select-none">$</span>
-              <input id="search-input"
-                     class="w-full pl-8 pr-4 py-3 bg-gb-bg-soft border-2 border-gb-bg2 rounded-lg
-                            text-gb-fg placeholder-gb-gray text-sm
-                            focus:border-gb-green focus:outline-none transition-colors duration-200"
-                     type="text" name="q" placeholder="search the web…" autofocus />
+              <span
+                aria-hidden="true"
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-gb-gray text-sm select-none"
+                >$</span
+              >
+              <input
+                id="search-input"
+                class="w-full pl-8 pr-4 py-3 bg-gb-bg-soft border-2 border-gb-bg2 rounded-lg text-gb-fg placeholder-gb-gray text-sm focus:border-gb-green focus:outline-none transition-colors duration-200"
+                type="text"
+                name="q"
+                placeholder="search the web…"
+                autofocus
+              />
             </div>
             <div class="flex gap-3">
-              <button type="submit"
-                      class="px-6 py-2 bg-gb-green text-gb-bg font-bold rounded-md text-sm
-                             hover:bg-gb-bright-green transition-colors duration-200">Search</button>
-              <button type="reset"
-                      class="px-6 py-2 border border-gb-bg2 text-gb-gray rounded-md text-sm
-                             hover:text-gb-red hover:border-gb-red transition-colors duration-200">Reset</button>
+              <button
+                type="submit"
+                class="px-6 py-2 bg-gb-green text-gb-bg font-bold rounded-md text-sm hover:bg-gb-bright-green transition-colors duration-200"
+              >
+                Search
+              </button>
+              <button
+                type="reset"
+                class="px-6 py-2 border border-gb-bg2 text-gb-gray rounded-md text-sm hover:text-gb-red hover:border-gb-red transition-colors duration-200"
+              >
+                Reset
+              </button>
             </div>
           </form>
         </div>
@@ -130,172 +205,427 @@
 
     <!-- ── Feature / Link Grid ──────────────────────────────── -->
     <main class="flex-1 max-w-7xl mx-auto w-full px-4 pb-12">
-      <p class="text-gb-gray text-xs uppercase tracking-widest mb-6 text-center">quick access</p>
+      <p
+        class="text-gb-gray text-xs uppercase tracking-widest mb-6 text-center"
+      >
+        quick access
+      </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
         <!-- Communication -->
-        <div class="card-hover animate-slide-up delay-100
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-yellow/50">
+        <div
+          class="card-hover animate-slide-up delay-100 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-yellow/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-yellow" aria-hidden="true">✉</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Communication</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Communication
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://mail.proton.me" target="_blank" rel="noopener noreferrer">Protonmail</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://app.tuta.com" target="_blank" rel="noopener noreferrer">Tutanota</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">whatsapp</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://mail.proton.me"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Protonmail</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://app.tuta.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tutanota</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >whatsapp</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Learning & Dev -->
-        <div class="card-hover animate-slide-up delay-200
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-blue/50">
+        <div
+          class="card-hover animate-slide-up delay-200 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-blue/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-blue" aria-hidden="true">⌨</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Learning &amp; Dev</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Learning &amp; Dev
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://wiki.archlinux.org" target="_blank" rel="noopener noreferrer">archWiki</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://wiki.hypr.land/" target="_blank" rel="noopener noreferrer">hyprWiki</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://fmhy.pages.dev/" target="_blank" rel="noopener noreferrer">FMHY</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" rel="noopener noreferrer">HTML/CSS</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://tailwindcss.com/docs/" target="_blank" rel="noopener noreferrer">Tailwind</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://roadmap.sh/" target="_blank" rel="noopener noreferrer">Roadmap</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://www.cloudskillsboost.google" target="_blank" rel="noopener noreferrer">googleCloud</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://wiki.archlinux.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                >archWiki</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://wiki.hypr.land/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >hyprWiki</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://fmhy.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >FMHY</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://developer.mozilla.org/en-US/docs/Web"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HTML/CSS</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://tailwindcss.com/docs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tailwind</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://roadmap.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Roadmap</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://www.cloudskillsboost.google"
+                target="_blank"
+                rel="noopener noreferrer"
+                >googleCloud</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Media -->
-        <div class="card-hover animate-slide-up delay-300
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-purple/50">
+        <div
+          class="card-hover animate-slide-up delay-300 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-purple/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-purple" aria-hidden="true">♪</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Media</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Media
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://music.youtube.com/" target="_blank" rel="noopener noreferrer">ytMusic</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://bandcamp.com/" target="_blank" rel="noopener noreferrer">bandcamp</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://letterboxd.com/lostglory_/" target="_blank" rel="noopener noreferrer">letterboxd</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">youtube</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://www.last.fm/user/lostglory_" target="_blank" rel="noopener noreferrer">lastfm</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://music.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ytMusic</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://bandcamp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >bandcamp</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://letterboxd.com/lostglory_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >letterboxd</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >youtube</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://www.last.fm/user/lostglory_"
+                target="_blank"
+                rel="noopener noreferrer"
+                >lastfm</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Gaming -->
-        <div class="card-hover animate-slide-up delay-400
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-orange/50">
+        <div
+          class="card-hover animate-slide-up delay-400 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-orange/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-orange" aria-hidden="true">⚔</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Gaming</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Gaming
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Steam</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://steamdb.info/" target="_blank" rel="noopener noreferrer">steamdb</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://www.protondb.com/" target="_blank" rel="noopener noreferrer">protondb</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://store.epicgames.com/" target="_blank" rel="noopener noreferrer">epicGames</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://isthereanydeal.com/" target="_blank" rel="noopener noreferrer">isTheirDeal</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://store.steampowered.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Steam</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://steamdb.info/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >steamdb</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://www.protondb.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >protondb</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://store.epicgames.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >epicGames</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://isthereanydeal.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >isTheirDeal</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Social & Misc -->
-        <div class="card-hover animate-slide-up delay-500
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-aqua/50">
+        <div
+          class="card-hover animate-slide-up delay-500 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-aqua/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-aqua" aria-hidden="true">◆</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Social &amp; Misc</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Social &amp; Misc
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://4chan.org/" target="_blank" rel="noopener noreferrer">/g/</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://lainchan.org/" target="_blank" rel="noopener noreferrer">lainchan</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://codeberg.org/" target="_blank" rel="noopener noreferrer">codeberg</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">chatgpt</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://monkeytype.com/" target="_blank" rel="noopener noreferrer">monkeyType</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://www.linkedin.com/in/4nubhav" target="_blank" rel="noopener noreferrer">linkedin</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://github.com/4nubhav-v" target="_blank" rel="noopener noreferrer">github</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://amazon.in/" target="_blank" rel="noopener noreferrer">amazon</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://4chan.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >/g/</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://lainchan.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >lainchan</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://codeberg.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >codeberg</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://chatgpt.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >chatgpt</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://monkeytype.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >monkeyType</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://www.linkedin.com/in/4nubhav"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://github.com/4nubhav-v"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://amazon.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >amazon</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Local & Services -->
-        <div class="card-hover animate-slide-up delay-600
-                    bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5
-                    hover:border-gb-red/50">
+        <div
+          class="card-hover animate-slide-up delay-600 bg-gb-bg-soft rounded-xl border border-gb-bg1 p-5 hover:border-gb-red/50"
+        >
           <div class="flex items-center gap-2 mb-4">
             <span class="text-gb-red" aria-hidden="true">⬡</span>
-            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">Local &amp; Services</h2>
+            <h2 class="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+              Local &amp; Services
+            </h2>
           </div>
           <ul class="grid grid-cols-3 gap-1">
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="http://127.0.0.1:8384/#" target="_blank" rel="noopener noreferrer">syncthing</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="http://192.168.1.1/" target="_blank" rel="noopener noreferrer">wifiRouter</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="https://enquiry.indianrail.gov.in/mntes/#" target="_blank" rel="noopener noreferrer">trainStats</a></li>
-            <li class="links"><a class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
-               href="http://127.0.0.1:8080" target="_blank" rel="noopener noreferrer">RSS</a></li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="http://127.0.0.1:8384/#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >syncthing</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="http://192.168.1.1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >wifiRouter</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="https://enquiry.indianrail.gov.in/mntes/#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >trainStats</a
+              >
+            </li>
+            <li class="links">
+              <a
+                class="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                href="http://127.0.0.1:8080"
+                target="_blank"
+                rel="noopener noreferrer"
+                >RSS</a
+              >
+            </li>
           </ul>
         </div>
-
-      </div><!-- /grid -->
+      </div>
+      <!-- /grid -->
     </main>
 
     <!-- ── Footer ───────────────────────────────────────────── -->
     <footer class="border-t border-gb-bg1 py-4 px-4">
-      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2
-                  text-xs text-gb-gray">
-        <span>made with <span class="text-gb-red">♥</span> using
-          <a class="hover:text-gb-green transition-colors duration-150"
-             href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">tailwindcss</a></span>
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gb-gray"
+      >
+        <span
+          >made with <span class="text-gb-red">♥</span> using
+          <a
+            class="hover:text-gb-green transition-colors duration-150"
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >tailwindcss</a
+          ></span
+        >
         <span>&copy; 2025 Anubhav</span>
-        <a class="hover:text-gb-green transition-colors duration-150"
-           href="https://github.com/4nubhav-v/startpage" target="_blank" rel="noopener noreferrer">source code</a>
+        <a
+          class="hover:text-gb-green transition-colors duration-150"
+          href="https://github.com/4nubhav-v/startpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          >source code</a
+        >
       </div>
     </footer>
 
     <!-- Neko animation -->
-    <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
+    <script
+      src="https://louisabraham.github.io/nekojs/neko.js"
+      data-autostart
+    ></script>
 
     <script>
       /* ── Clock ───────────────────────────────────────────── */
       function updateTime() {
         const t = new Date().toLocaleTimeString();
-        const el  = document.getElementById("time");
+        const el = document.getElementById("time");
         const elM = document.getElementById("time-mobile");
-        if (el)  el.textContent  = t;
+        if (el) el.textContent = t;
         if (elM) elM.textContent = t;
       }
       setInterval(updateTime, 1000);
@@ -304,25 +634,25 @@
       /* ── Weather ─────────────────────────────────────────── */
       async function updateWeather() {
         try {
-          const res  = await fetch("https://wttr.in/?format=%l:+%c+%t");
+          const res = await fetch("https://wttr.in/?format=%l:+%c+%t");
           const text = await res.text();
-          const el  = document.getElementById("weather");
+          const el = document.getElementById("weather");
           const elM = document.getElementById("weather-mobile");
-          if (el)  el.textContent  = text;
+          if (el) el.textContent = text;
           if (elM) elM.textContent = text;
         } catch (_) {
           const msg = "weather unavailable";
-          const el  = document.getElementById("weather");
+          const el = document.getElementById("weather");
           const elM = document.getElementById("weather-mobile");
-          if (el)  el.textContent  = msg;
+          if (el) el.textContent = msg;
           if (elM) elM.textContent = msg;
         }
       }
       updateWeather();
 
       /* ── Theme toggle ────────────────────────────────────── */
-      const html   = document.documentElement;
-      const icon   = document.getElementById("theme-icon");
+      const html = document.documentElement;
+      const icon = document.getElementById("theme-icon");
 
       function applyTheme(dark) {
         if (dark) {
@@ -334,12 +664,16 @@
           html.classList.add("light");
           icon.textContent = "☾";
         }
-        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (_) {}
+        try {
+          localStorage.setItem("theme", dark ? "dark" : "light");
+        } catch (_) {}
       }
 
       // Restore saved preference (default: dark)
       let savedTheme = "dark";
-      try { savedTheme = localStorage.getItem("theme") || "dark"; } catch (_) {}
+      try {
+        savedTheme = localStorage.getItem("theme") || "dark";
+      } catch (_) {}
       applyTheme(savedTheme !== "light");
 
       document.getElementById("theme-toggle").addEventListener("click", () => {
@@ -348,26 +682,28 @@
 
       /* ── Search engine switcher ──────────────────────────── */
       const engineActions = {
-        google: { url: "https://www.google.com/search",   param: "q"    },
-        ddg:    { url: "https://duckduckgo.com/",          param: "q"    },
-        searx:  { url: "https://searx.space/",             param: "q"    },
-        yan:    { url: "https://yandex.com/search/",       param: "text" },
+        google: { url: "https://www.google.com/search", param: "q" },
+        ddg: { url: "https://duckduckgo.com/", param: "q" },
+        searx: { url: "https://searx.space/", param: "q" },
+        yan: { url: "https://yandex.com/search/", param: "text" },
       };
 
       const selectSearch = document.getElementById("select-search");
-      const searchForm   = document.getElementById("search-form");
-      const searchInput  = document.getElementById("search-input");
+      const searchForm = document.getElementById("search-form");
+      const searchInput = document.getElementById("search-input");
 
       selectSearch.addEventListener("change", function () {
         const eng = engineActions[this.value] || engineActions.google;
-        searchForm.action  = eng.url;
-        searchInput.name   = eng.param;
+        searchForm.action = eng.url;
+        searchInput.name = eng.param;
       });
 
       /* ── Mobile menu ─────────────────────────────────────── */
-      document.getElementById("mobile-menu-btn").addEventListener("click", () => {
-        document.getElementById("mobile-menu").classList.toggle("open");
-      });
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.toggle("open");
+        });
     </script>
   </body>
 </html>
