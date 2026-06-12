@@ -44,7 +44,7 @@ const startpageData = [
       { label: "letterboxd", url: "https://letterboxd.com/lostglory_/" },
       { label: "youtube", url: "https://www.youtube.com/" },
       { label: "lastfm", url: "https://www.last.fm/user/lostglory_" },
-      { label: "rateyourmusic", url: "https://rateyourmusic.com/~lostglory_" },
+      { label: "rym", url: "https://rateyourmusic.com/~lostglory_" },
     ],
   },
   {

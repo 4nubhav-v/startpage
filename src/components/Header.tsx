@@ -7,7 +7,7 @@ function Header() {
   }
   updateTime();
   return (
-    <div className="navbar shadow-sm sticky top-0 bg-gb-bg-hard border-b border-gb-bg1 backdrop-blur-sm">
+    <div className="navbar shadow-sm sticky top-0 bg-gb-bg-hard/40 border-b border-gb-bg1 backdrop-blur-sm z-10">
       <div className="navbar-start pl-8">
         <div className="dropdown">
           <div

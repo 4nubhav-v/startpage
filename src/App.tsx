@@ -25,21 +25,21 @@ function getCardmaker() {
 function App() {
   return (
     <>
-      <div className="w-full h-screen flex flex-col bg-gb-bg text-gb-fg">
+      <div className="w-full min-h-screen flex flex-col bg-gb-bg text-gb-fg relative">
         <Header />
-        <div className="p-4 m-4">
+        <div className="p-4 m-4 grow">
           <div className="flex flex-col items-center justify-between mt-4">
-            <div className=" relative w-4xl h-24 flex justify-center items-center mt-5">
-              <h1 className="text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center">
+            <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5">
+              <h1 className="text-[2rem] lg:text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center ">
                 Welcome Anubhav &lt;3
               </h1>
-              <div className="absolute w-20 h-20 left-20 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
-              <div className="absolute w-20 h-20 right-20 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
+              <div className="absolute lg:w-20 w-14 h-20 lg:left-20 left-1 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
+              <div className="absolute lg:w-20 w-14 h-20 lg:right-20 right-1 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
             </div>
             <div className="w-1/2">
               <Form />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-4 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-4 pt-8 w-full">
               {getCardmaker()}
             </div>
           </div>

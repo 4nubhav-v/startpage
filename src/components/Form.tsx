@@ -7,7 +7,7 @@ function Form() {
         action="https://www.google.com/search"
         method="get"
       >
-        <div className="relative w-full">
+        <div className="relative md:w-full w-[300px]">
           <span
             aria-hidden="true"
             className="absolute left-4 top-1/2 -translate-y-1/2 text-gb-gray text-sm select-none"
@@ -16,7 +16,7 @@ function Form() {
           </span>
           <input
             id="search-input"
-            className="w-full pl-8 pr-4 py-3 bg-gb-bg-soft border-2 border-gb-bg2 rounded-lg text-gb-fg placeholder-gb-gray text-sm focus:border-gb-green focus:outline-none transition-colors duration-200"
+            className="w-full pl-8 pr-4 py-3 bg-gb-bg-soft border-2 border-gb-bg2 rounded-lg text-gb-fg placeholder-gb-gray text-sm focus:border-gb-green focus:outline-none transition-colors duration-200 "
             type="text"
             name="q"
             placeholder="search the web…"
