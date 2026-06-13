@@ -13,7 +13,7 @@ function Header() {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost btn-circle pl-2"
+            className="btn btn-ghost btn-circle active:bg-gb-green/20 hover:bg-gb-green/20 focus:bg-gb-green/20"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,16 +33,34 @@ function Header() {
           </div>
           <ul
             tabIndex={-1}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-gb-bg rounded-box z-1 mt-3 w-52 p-2 shadow drop-shadow-2xl"
           >
             <li>
-              <a>Homepage</a>
+              <a
+                href="https://github.com/4nubhav-v"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a
+                href="https://anubhav-v.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Homepage
+              </a>
             </li>
             <li>
-              <a>About</a>
+              <a
+                href="https://anubhav-v.github.io/about"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About
+              </a>
             </li>
           </ul>
         </div>

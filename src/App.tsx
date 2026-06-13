@@ -29,17 +29,15 @@ function App() {
         <Header />
         <div className="p-4 m-4 grow">
           <div className="flex flex-col items-center justify-between mt-4">
-            <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5">
+            <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5 lg:mt-2">
               <h1 className="text-[2rem] lg:text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center ">
                 Welcome Anubhav &lt;3
               </h1>
-              <div className="absolute lg:w-20 w-14 h-20 lg:left-20 left-1 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
-              <div className="absolute lg:w-20 w-14 h-20 lg:right-20 right-1 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
+              <div className="absolute lg:w-20 w-14 h-20 lg:left-max left-1 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
+              <div className="absolute lg:w-20 w-14 h-20 lg:right-max right-1 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
             </div>
-            <div className="w-1/2">
-              <Form />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-4 pt-8 w-full">
+            <Form />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 p-4 m-4 pt-8 lg:m-15 lg:p-10 w-full">
               {getCardmaker()}
             </div>
           </div>

@@ -7,7 +7,7 @@ function Form() {
         action="https://www.google.com/search"
         method="get"
       >
-        <div className="relative md:w-full w-[300px]">
+        <div className="relative w-full sm:w-3/4 md:1/2 lg:w-1/2">
           <span
             aria-hidden="true"
             className="absolute left-4 top-1/2 -translate-y-1/2 text-gb-gray text-sm select-none"
