@@ -22,6 +22,20 @@ function getCardmaker() {
   return cards;
 }
 
+function GetUser() {
+  const username = localStorage.getItem("name");
+  if (!username) {
+    const a = prompt(
+      "Ahh looks like this is your first time visting this site, Can u enter your name plz :)",
+    );
+    if (a) {
+      localStorage.setItem("name", a);
+    } else {
+      localStorage.setItem("name", "Guest");
+    }
+  }
+  return <>{username}</>;
+}
 function App() {
   return (
     <>
@@ -31,7 +45,7 @@ function App() {
           <div className="flex flex-col items-center justify-between mt-4">
             <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5 lg:mt-2">
               <h1 className="text-[2rem] lg:text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center ">
-                Welcome Anubhav &lt;3
+                Welcome <span>{GetUser()}</span> &lt;3
               </h1>
               <div className="absolute lg:w-20 w-14 h-20 lg:left-max left-1 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
               <div className="absolute lg:w-20 w-14 h-20 lg:right-max right-1 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
