@@ -39,10 +39,10 @@ function GetUser() {
 function App() {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col bg-gb-bg text-gb-fg relative">
+      <div className="w-full min-h-screen flex flex-col bg-linear-to-b from-gb-green/10 from-10% via-gb-bg via-50% to-gb-green/10 to-90% text-gb-fg relative">
         <Header />
         <div className="p-4 m-4 grow">
-          <div className="flex flex-col items-center justify-between mt-4">
+          <div className="flex flex-col items-center justify-between max-w-7xl mt-36 mx-auto">
             <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5 lg:mt-2">
               <h1 className="text-[2rem] lg:text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center ">
                 Welcome <span>{GetUser()}</span> &lt;3
