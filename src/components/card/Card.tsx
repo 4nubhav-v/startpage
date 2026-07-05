@@ -31,9 +31,9 @@ function Card({
         </div>
         <ul className="grid lg:grid-cols-3 grid-cols-2 gap-2">
           {info.socialsInfo.map((link, index) => (
-            <li key={index} className="links ">
+            <li key={index} className="links font-semibold text-sm">
               <a
-                className="text-gb-fg hover:text-gb-green transition-colors duration-150 text-sm"
+                className="text-gb-fg3/80 hover:text-gb-green transition-colors duration-150 text-sm"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
