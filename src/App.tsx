@@ -39,19 +39,19 @@ function GetUser() {
 function App() {
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col bg-linear-to-b from-gb-green/10 from-10% via-gb-bg via-50% to-gb-green/10 to-90% text-gb-fg relative">
+      <div className="from-gb-green/10 via-gb-bg to-gb-green/10 text-gb-fg selection:bg-gb-fg selection:text-gb-green relative flex min-h-screen w-full flex-col bg-linear-to-b from-10% via-50% to-90%">
         <Header />
-        <div className="p-4 m-4 grow">
-          <div className="flex flex-col items-center justify-between max-w-7xl mt-36 mx-auto">
-            <div className=" relative max-w-4xl h-24 flex justify-center items-center mt-5 lg:mt-2">
-              <h1 className="text-[2rem] lg:text-6xl font-bold bg-linear-to-r from-gb-fg to-gb-green bg-clip-text text-transparent text-shadow-2xl p-4 text-center ">
+        <div className="m-4 grow p-4">
+          <div className="mx-auto mt-36 flex max-w-7xl flex-col items-center justify-between">
+            <div className="relative mt-5 flex h-24 max-w-4xl items-center justify-center lg:mt-2">
+              <h1 className="from-gb-fg to-gb-green text-shadow-2xl bg-linear-to-r bg-clip-text p-4 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl">
                 Welcome <span>{GetUser()}</span> &lt;3
               </h1>
-              <div className="absolute lg:w-20 w-14 h-20 lg:left-max left-1 bg-gb-fg/30 rounded-full blur-3xl animate-fade-in"></div>
-              <div className="absolute lg:w-20 w-14 h-20 lg:right-max right-1 bg-gb-green/30 rounded-full blur-3xl animate-fade-in"></div>
+              <div className="lg:left-max bg-gb-fg/30 animate-fade-in absolute left-1 h-20 w-14 rounded-full blur-3xl lg:w-20"></div>
+              <div className="lg:right-max bg-gb-green/30 animate-fade-in absolute right-1 h-20 w-14 rounded-full blur-3xl lg:w-20"></div>
             </div>
             <Form />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 p-4 m-4 pt-8 lg:m-15 lg:p-10 w-full">
+            <div className="m-4 grid w-full grid-cols-1 gap-4 p-4 pt-8 md:grid-cols-2 lg:m-15 lg:grid-cols-3 lg:gap-7 lg:p-10">
               {getCardmaker()}
             </div>
           </div>
