@@ -20,20 +20,20 @@ function Card({
 }: CardProps) {
   return (
     <>
-      <div className="card-hover animate-slide-up delay-100 bg-gb-bg-soft rounded-xl border border-gb-bg1 lg:py-8 lg:px-5 p-5 hover:border-gb-yellow/50 w-full ">
-        <div className="flex items-center gap-2 lg:gap-4 mb-4">
+      <div className="card-hover animate-slide-up bg-gb-bg-soft border-gb-bg1 hover:border-gb-yellow/50 w-full rounded-xl border p-5 delay-100 lg:px-5 lg:py-8">
+        <div className="mb-4 flex items-center gap-2 lg:gap-4">
           <span className="text-gb-yellow" aria-hidden="true">
             {info.icon}
           </span>
-          <h2 className="text-gb-fg2 text-xs uppercase tracking-wider font-bold">
+          <h2 className="text-gb-fg2 text-xs font-bold tracking-wider uppercase">
             {info.title}
           </h2>
         </div>
-        <ul className="grid lg:grid-cols-3 grid-cols-2 gap-2">
+        <ul className="grid grid-cols-2 gap-2 lg:grid-cols-3">
           {info.socialsInfo.map((link, index) => (
-            <li key={index} className="links font-semibold text-sm">
+            <li key={index} className="links text-sm font-semibold">
               <a
-                className="text-gb-fg3/80 hover:text-gb-green transition-colors duration-150 text-sm"
+                className="text-gb-fg3/80 hover:text-gb-green text-sm transition-colors duration-150"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"

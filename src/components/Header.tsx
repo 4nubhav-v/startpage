@@ -7,7 +7,7 @@ function Header() {
   }
   updateTime();
   return (
-    <div className="navbar shadow-sm sticky top-0 bg-gb-bg-hard/40 border-b border-gb-bg1 backdrop-blur-sm z-10">
+    <div className="navbar bg-gb-bg-hard/40 border-gb-bg1 sticky top-0 z-10 border-b shadow-sm backdrop-blur-sm">
       <div className="navbar-start pl-8">
         <div className="dropdown">
           <div
@@ -66,7 +66,9 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <p id="time" className="font-semibold text-sm"> </p>
+        <p id="time" className="text-sm font-semibold">
+          {" "}
+        </p>
       </div>
       <div className="navbar-end pr-8">
         <label className="swap swap-rotate">

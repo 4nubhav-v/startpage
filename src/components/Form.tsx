@@ -3,20 +3,20 @@ function Form() {
     <>
       <form
         id="search-form"
-        className="w-full flex flex-col items-center gap-4 justify-around p-4 m-4 mt-8"
+        className="m-4 mt-8 flex w-full flex-col items-center justify-around gap-4 p-4"
         action="https://www.google.com/search"
         method="get"
       >
-        <div className="relative w-full sm:w-3/4 md:1/2 lg:w-1/2">
+        <div className="md:1/2 relative w-full sm:w-3/4 lg:w-1/2">
           <span
             aria-hidden="true"
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-gb-gray text-sm select-none"
+            className="text-gb-gray absolute top-1/2 left-4 -translate-y-1/2 text-sm select-none"
           >
             $
           </span>
           <input
             id="search-input"
-            className="w-full pl-8 pr-4 py-3 bg-gb-bg-soft border-2 border-gb-bg2 rounded-lg text-gb-fg placeholder-gb-gray text-sm focus:border-gb-green focus:outline-none transition-colors duration-200 "
+            className="bg-gb-bg-soft border-gb-bg2 text-gb-fg placeholder-gb-gray focus:border-gb-green w-full rounded-lg border-2 py-3 pr-4 pl-8 text-sm transition-colors duration-200 focus:outline-none"
             type="text"
             name="q"
             placeholder="search the web…"
@@ -26,13 +26,13 @@ function Form() {
         <div className="flex gap-3">
           <button
             type="submit"
-            className="px-6 py-2 bg-gb-green text-gb-bg font-bold rounded-md text-sm hover:bg-gb-bright-green transition-colors duration-200"
+            className="bg-gb-green text-gb-bg hover:bg-gb-bright-green rounded-md px-6 py-2 text-sm font-bold transition-colors duration-200"
           >
             Search
           </button>
           <button
             type="reset"
-            className="px-6 py-2 border border-gb-bg2 text-gb-gray rounded-md text-sm hover:text-gb-red hover:border-gb-red transition-colors duration-200"
+            className="border-gb-bg2 text-gb-gray hover:text-gb-red hover:border-gb-red rounded-md border px-6 py-2 text-sm transition-colors duration-200"
           >
             Reset
           </button>
