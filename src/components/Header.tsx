@@ -66,7 +66,7 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <p id="time"> </p>
+        <p id="time" className="font-semibold text-sm"> </p>
       </div>
       <div className="navbar-end pr-8">
         <label className="swap swap-rotate">
