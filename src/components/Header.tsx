@@ -1,11 +1,30 @@
+import { useState, useEffect } from "react";
+
 function Header() {
-  function updateTime() {
-    setInterval(() => {
-      const time = new Date().toLocaleTimeString();
-      document.getElementById("time")!.textContent = time;
+  const [time, setTime] = useState("");
+  const [temperature, setTemperature] = useState<String | null>(null);
+  useEffect(() => {
+     const id = setInterval(() => {
+      const t = new Date().toLocaleTimeString();
+      setTime(t);
     }, 1000);
-  }
-  updateTime();
+    return () => clearInterval(id)
+  }, []);
+
+  useEffect(() => {
+    const fetchTemperature = async () => {
+      try {
+        const response = await fetch(
+          "https://api.open-meteo.com/v1/forecast?latitude=26.7617&longitude=89.0767&current_weather=true",
+        );
+        const data = await response.json();
+        setTemperature(data.current_weather.temperature + "°C");
+      } catch (error) {
+        console.error("Error fetching temperature:", error);
+      }
+    };
+    fetchTemperature();
+  }, []);
   return (
     <div className="navbar bg-gb-bg-hard/40 border-gb-bg1 sticky top-0 z-10 border-b shadow-sm backdrop-blur-sm">
       <div className="navbar-start pl-8">
@@ -66,9 +85,10 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <p id="time" className="text-sm font-semibold">
-          {" "}
+        <p className="text-sm font-semibold px-2">
+          {time}
         </p>
+        <p className="text-sm font-semibold px-2">{temperature}</p>
       </div>
       <div className="navbar-end pr-8">
         <label className="swap swap-rotate">
