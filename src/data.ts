@@ -80,10 +80,13 @@ const startpageData = [
     links: [
       { label: "syncthing", url: "http://127.0.0.1:8384/#" },
       { label: "wifiRouter", url: "http://192.168.1.1/" },
-      { label: "statusPage", url: "https://status.startpage.gq/" },
-      { label: "jellyfin", url: "http://127.0.0.1:8096/" },
-      { label: "navidrome", url: "http://127.0.0.1:4533/" },
-      { label: "nextcloud", url: "http://127.0.0.1:8080/" },
+      { label: "statusPage", url: "http://server.tail32e265.ts.net:3001" },
+      { label: "jellyfin", url: "http://server.tail32e265.ts.net:8096" },
+      { label: "navidrome", url: "http://server.tail32e265.ts.net:4533" },
+      {
+        label: "tailscale",
+        url: "https://console.tailscale.com/admin/machines",
+      },
     ],
   },
 ];
