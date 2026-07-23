@@ -1,3 +1,5 @@
+
+import { motion } from "motion/react";
 import "./Card.css";
 
 // 1. Define the structure of a single link
@@ -14,13 +16,17 @@ interface CardProps {
     socialsInfo: SocialLink[];
   };
 }
+const lianimate = {
+  start: { opacity: 0, y: 8 },
+  animate: { opacity: 1, y: 0 },
+};
 
 function Card({
   info = { title: "Title", icon: "✉", socialsInfo: [] },
 }: CardProps) {
   return (
     <>
-      <div className="card-hover animate-slide-up bg-gb-bg-soft border-gb-bg1 hover:border-gb-yellow/50 w-full rounded-xl border p-5 delay-100 lg:px-5 lg:py-8">
+      <motion.div variants={lianimate}    className="card-hover bg-gb-bg-soft border-gb-bg1 hover:border-gb-yellow/50 w-full rounded-xl border p-5 delay-100 lg:px-5 lg:py-8">
         <div className="mb-4 flex items-center gap-2 lg:gap-4">
           <span className="text-gb-yellow" aria-hidden="true">
             {info.icon}
@@ -43,7 +49,7 @@ function Card({
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 }

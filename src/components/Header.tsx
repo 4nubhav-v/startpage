@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useTheme } from "./theme-provider.tsx";
 
 function Header() {
+  const {theme, setTheme} = useTheme();
   const [time, setTime] = useState("");
   const [temperature, setTemperature] = useState<String | null>(null);
   useEffect(() => {
@@ -96,7 +98,7 @@ function Header() {
           <input
             type="checkbox"
             className="theme-controller"
-            value="synthwave"
+            onClick={() => {theme === 'dark'? setTheme('light'): setTheme('dark')}}
           />
 
           {/* sun icon */}
