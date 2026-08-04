@@ -1,4 +1,3 @@
-
 import { motion } from "motion/react";
 import "./Card.css";
 
@@ -26,20 +25,23 @@ function Card({
 }: CardProps) {
   return (
     <>
-      <motion.div variants={lianimate}    className="card-hover bg-gb-bg-soft border-gb-bg1 hover:border-gb-yellow/50 w-full rounded-xl border p-5 delay-100 lg:px-5 lg:py-8">
+      <motion.div
+        variants={lianimate}
+        className="card-hover bg-gb-bg-soft border-gb-bg1 hover:border-gb-yellow/50 w-full rounded-xl border p-5 delay-100 lg:px-5 lg:py-8"
+      >
         <div className="mb-4 flex items-center gap-2 lg:gap-4">
           <span className="text-gb-yellow" aria-hidden="true">
             {info.icon}
           </span>
-          <h2 className="text-gb-fg2 text-xs font-bold tracking-wider uppercase">
+          <h2 className="text-gb-fg2 font-ibm-plex-sans text-sm font-semibold tracking-wider uppercase">
             {info.title}
           </h2>
         </div>
         <ul className="grid grid-cols-2 gap-2 lg:grid-cols-3">
           {info.socialsInfo.map((link, index) => (
-            <li key={index} className="links text-sm font-semibold">
+            <li key={index} className="links text-[10px] font-semibold">
               <a
-                className="text-gb-fg3/80 hover:text-gb-green text-sm transition-colors duration-150"
+                className="text-gb-fg3/80 hover:text-gb-green font-ioskeleymono text-sm transition-colors duration-150"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import { useTheme } from "./theme-provider.tsx";
 
 function Header() {
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
   const [time, setTime] = useState("");
-  const [temperature, setTemperature] = useState<String | null>(null);
+  const [temperature, setTemperature] = useState<string | null>(null);
   useEffect(() => {
-     const id = setInterval(() => {
+    const id = setInterval(() => {
       const t = new Date().toLocaleTimeString();
       setTime(t);
     }, 1000);
-    return () => clearInterval(id)
+    return () => clearInterval(id);
   }, []);
 
   useEffect(() => {
@@ -87,10 +87,8 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <p className="text-sm font-semibold px-2">
-          {time}
-        </p>
-        <p className="text-sm font-semibold px-2">{temperature}</p>
+        <p className="px-2 text-sm font-semibold">{time}</p>
+        <p className="px-2 text-sm font-semibold">{temperature}</p>
       </div>
       <div className="navbar-end pr-8">
         <label className="swap swap-rotate">
@@ -98,7 +96,9 @@ function Header() {
           <input
             type="checkbox"
             className="theme-controller"
-            onClick={() => {theme === 'dark'? setTheme('light'): setTheme('dark')}}
+            onClick={() =>
+              theme === "dark" ? setTheme("light") : setTheme("dark")
+            }
           />
 
           {/* sun icon */}
