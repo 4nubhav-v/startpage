@@ -58,7 +58,7 @@ function GetUser() {
 function Container() {
   return (
     <>
-      <html className="bg-gb-bg text-gb-fg selection:bg-gb-fg selection:text-gb-green relative flex min-h-screen w-full scrollbar-none flex-col bg-linear-to-b from-10% via-50% to-90%">
+      <div className="bg-gb-bg text-gb-fg selection:bg-gb-fg selection:text-gb-green relative flex min-h-screen w-full flex-col bg-linear-to-b from-10% via-50% to-90%">
         <Header />
         <div className="m-4 grow p-4">
           <div className="mx-auto mt-36 flex max-w-7xl flex-col items-center justify-between">
@@ -91,7 +91,7 @@ function Container() {
           </div>
         </div>
         <Footer />
-      </html>
+      </div>
     </>
   );
 }
