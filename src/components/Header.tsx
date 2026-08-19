@@ -1,14 +1,22 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "./theme-provider.tsx";
+import NumberFlow, { NumberFlowGroup } from "@number-flow/react";
 
 function Header() {
   const { theme, setTheme } = useTheme();
-  const [time, setTime] = useState("");
+  const [hour, setHour] = useState<number>(0);
+  const [min, setMin] = useState<number>(0);
+  const [sec, setSec] = useState<number>(0);
   const [temperature, setTemperature] = useState<string | null>(null);
   useEffect(() => {
     const id = setInterval(() => {
-      const t = new Date().toLocaleTimeString();
-      setTime(t);
+      const time = new Date();
+      const s = time.getSeconds();
+      const h = time.getHours();
+      const m = time.getMinutes();
+      setHour(h % 12 || 12);
+      setMin(m);
+      setSec(s);
     }, 1000);
     return () => clearInterval(id);
   }, []);
@@ -87,7 +95,21 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <p className="px-2 text-sm font-semibold">{time}</p>
+        <NumberFlowGroup>
+          <div className="font-ibm-plex-sans px-2 text-sm font-semibold">
+            <NumberFlow value={hour} format={{ minimumIntegerDigits: 2 }} />
+            <NumberFlow
+              value={min}
+              format={{ minimumIntegerDigits: 2 }}
+              prefix=" : "
+            />
+            <NumberFlow
+              value={sec}
+              format={{ minimumIntegerDigits: 2 }}
+              prefix=" : "
+            />
+          </div>
+        </NumberFlowGroup>
         <p className="px-2 text-sm font-semibold">{temperature}</p>
       </div>
       <div className="navbar-end pr-8">
