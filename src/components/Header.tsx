@@ -96,8 +96,12 @@ function Header() {
       </div>
       <div className="navbar-center">
         <NumberFlowGroup>
-          <div className="font-ibm-plex-sans px-2 text-sm font-semibold">
-            <NumberFlow value={hour} format={{ minimumIntegerDigits: 2 }} />
+          <div className="font-ibm-plex-sans selection:bg-gb-fg selection:text-gb-green px-2 text-sm font-semibold">
+            <NumberFlow
+              value={hour}
+              format={{ minimumIntegerDigits: 2 }}
+              className="selection:bg-gb-fg selection:text-gb-green"
+            />
             <NumberFlow
               value={min}
               format={{ minimumIntegerDigits: 2 }}
