@@ -61,7 +61,7 @@ function Container() {
       <div className="bg-gb-bg text-gb-fg selection:bg-gb-fg selection:text-gb-green relative flex min-h-screen w-full flex-col bg-linear-to-b from-10% via-50% to-90%">
         <Header />
         <div className="m-4 grow p-4">
-          <div className="mx-auto mt-36 flex max-w-7xl flex-col items-center justify-between">
+          <main className="mx-auto mt-36 flex max-w-7xl flex-col items-center justify-between">
             <div className="relative mt-5 flex h-24 max-w-4xl items-center justify-center lg:mt-2">
               <motion.h1
                 initial={{
@@ -88,7 +88,7 @@ function Container() {
             >
               {getCardmaker()}
             </motion.div>
-          </div>
+          </main>
         </div>
         <Footer />
       </div>

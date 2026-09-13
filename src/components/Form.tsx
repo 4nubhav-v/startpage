@@ -15,11 +15,11 @@ function Form() {
             $
           </span>
           <input
-            id="search-input"
+            id="searchInput"
             className="font-ioskeleymono bg-gb-bg-soft border-gb-bg2 text-gb-fg placeholder-gb-gray focus:border-gb-green w-full rounded-lg border-2 py-3 pr-4 pl-8 text-sm transition-colors duration-200 focus:outline-none"
             type="text"
             name="q"
-            placeholder="search the web…"
+            placeholder="Search the web…"
             autoFocus
           />
         </div>

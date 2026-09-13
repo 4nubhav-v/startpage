@@ -36,7 +36,7 @@ function Header() {
     fetchTemperature();
   }, []);
   return (
-    <div className="navbar bg-gb-bg-hard/40 border-gb-bg1 sticky top-0 z-10 border-b shadow-sm backdrop-blur-sm">
+    <header className="navbar bg-gb-bg-hard/40 border-gb-bg1 sticky top-0 z-10 border-b shadow-sm backdrop-blur-sm">
       <div className="navbar-start pl-8">
         <div className="dropdown">
           <div
@@ -146,7 +146,7 @@ function Header() {
           </svg>
         </label>
       </div>
-    </div>
+    </header>
   );
 }
 
