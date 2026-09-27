@@ -43,6 +43,7 @@ function Header() {
             tabIndex={0}
             role="button"
             className="btn btn-ghost btn-circle active:bg-gb-green/20 hover:bg-gb-green/20 focus:bg-gb-green/20"
+            aria-label="dropdown-menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,6 +123,7 @@ function Header() {
           <input
             type="checkbox"
             className="theme-controller"
+            aria-label="theme-toogle-button"
             onClick={() =>
               theme === "dark" ? setTheme("light") : setTheme("dark")
             }

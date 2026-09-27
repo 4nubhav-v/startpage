@@ -70,7 +70,6 @@ function Container() {
                   scale: 0.88,
                   filter: "blur(2px)",
                 }}
-                transition={{ type: "spring", bounce: 0.65, delay: 0.3 }}
                 animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
                 className="from-gb-fg to-gb-green text-shadow-2xl bg-linear-to-r bg-clip-text p-4 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl"
               >
