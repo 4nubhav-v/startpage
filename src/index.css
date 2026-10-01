@@ -198,37 +198,6 @@ li {
   animation: slideUp 0.5s ease forwards;
 }
 
-/* Staggered entrance delays (used on cards) */
-.delay-100 {
-  animation-delay: 0.1s;
-  opacity: 0;
-}
-
-.delay-200 {
-  animation-delay: 0.2s;
-  opacity: 0;
-}
-
-.delay-300 {
-  animation-delay: 0.3s;
-  opacity: 0;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
-  opacity: 0;
-}
-
-.delay-500 {
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.delay-600 {
-  animation-delay: 0.6s;
-  opacity: 0;
-}
-
 /* Animated gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #98971a 0%, #458588 50%, #d79921 100%);
