@@ -75,8 +75,14 @@ function Container() {
               >
                 Welcome <span>{GetUser()}</span> &lt;3
               </motion.h1>
-              <div className="lg:left-max bg-gb-fg/30 animate-fade-in absolute left-1 h-20 w-14 rounded-full blur-3xl lg:w-20"></div>
-              <div className="lg:right-max bg-gb-green/30 animate-fade-in absolute right-1 h-20 w-14 rounded-full blur-3xl lg:w-20"></div>
+              <div
+                id="leftglob"
+                className="bg-gb-fg/30 animate-fade-in absolute left-1 h-20 w-14 rounded-full blur-3xl lg:-left-10 lg:h-25 lg:w-75"
+              ></div>
+              <div
+                id="rightglob"
+                className="bg-gb-green/30 animate-fade-in absolute right-1 h-20 w-14 rounded-full blur-3xl lg:-right-10 lg:h-25 lg:w-75"
+              ></div>
             </div>
             <Form />
             <motion.div

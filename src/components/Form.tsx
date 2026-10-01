@@ -26,13 +26,13 @@ function Form() {
         <div className="flex gap-3">
           <button
             type="submit"
-            className="bg-gb-green text-gb-bg hover:bg-gb-bright-green font-ioskeleymono rounded-md px-6 py-2 text-sm font-bold transition-colors duration-200"
+            className="bg-gb-green text-gb-bg hover:bg-gb-bright-green font-ioskeleymono focus:outline-gb-fg rounded-md px-6 py-2 text-sm font-bold transition-colors duration-200 focus:outline-2"
           >
             Search
           </button>
           <button
             type="reset"
-            className="border-gb-bg2 text-gb-gray hover:text-gb-red hover:border-gb-red font-ioskeleymono rounded-md border px-6 py-2 text-sm transition-colors duration-200"
+            className="border-gb-bg2 text-gb-gray hover:text-gb-red hover:border-gb-red focus:text-gb-red focus:outline-gb-red font-ioskeleymono rounded-md border px-6 py-2 text-sm transition-colors duration-200 focus:outline-2"
           >
             Reset
           </button>

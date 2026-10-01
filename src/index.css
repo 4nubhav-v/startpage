@@ -2,19 +2,13 @@
 @font-face {
   font-family: "IosekelyMono Nerd Font";
   src:
-    url("/src/assets/fonts/WOFF2/IoskeleyMono-Regular.woff2") format("woff2"),
-    url("/src/assets/fonts/WOFF/IoskeleyMono-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "IosekelyMono Nerd Font";
-  src:
     url("/src/assets/fonts/WOFF2/IoskeleyMono-SemiBold.woff2") format("woff2"),
     url("/src/assets/fonts/WOFF/IoskeleyMono-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -90,6 +84,13 @@ li {
   text-align: center;
 }
 
+#leftglob {
+  animation: 10s globesleftAnimation infinite;
+}
+#rightglob {
+  animation: 10s globesrightAnimation infinite;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -110,6 +111,28 @@ li {
 }
 
 /* ── Keyframe animations ────────────────────────────────────── */
+@keyframes globesleftAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes globesrightAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
