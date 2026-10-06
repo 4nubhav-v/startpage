@@ -96,13 +96,9 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <NumberFlowGroup>
-          <div className="font-ibm-plex-sans selection:bg-gb-fg selection:text-gb-green px-2 text-sm font-semibold">
-            <NumberFlow
-              value={hour}
-              format={{ minimumIntegerDigits: 2 }}
-              className="selection:bg-gb-fg selection:text-gb-green"
-            />
+        <div className="font-ibm-plex-sans px-2 text-sm font-semibold">
+          <NumberFlowGroup>
+            <NumberFlow value={hour} format={{ minimumIntegerDigits: 2 }} />
             <NumberFlow
               value={min}
               format={{ minimumIntegerDigits: 2 }}
@@ -113,13 +109,12 @@ function Header() {
               format={{ minimumIntegerDigits: 2 }}
               prefix=" : "
             />
-          </div>
-        </NumberFlowGroup>
+          </NumberFlowGroup>
+        </div>
         <p className="px-2 text-sm font-semibold">{temperature}</p>
       </div>
       <div className="navbar-end pr-8">
         <label className="swap swap-rotate">
-          {/* this hidden checkbox controls the state */}
           <input
             type="checkbox"
             className="theme-controller"
