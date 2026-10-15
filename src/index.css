@@ -87,13 +87,6 @@ li {
   text-align: center;
 }
 
-#leftglob {
-  animation: 10s globesleftAnimation infinite;
-}
-#rightglob {
-  animation: 10s globesrightAnimation infinite;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
