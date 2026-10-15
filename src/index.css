@@ -68,6 +68,9 @@ html.light {
 }
 
 /* ── Base ───────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "IBM Plex Sans", sans-serif;
   transition:
