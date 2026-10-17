@@ -9,7 +9,7 @@ function Footer() {
           transition={{ delay: 0.2 }}
           whileInView={{ opacity: 1, filter: "blur(0px)" }}
         >
-          Copyright © {new Date().getFullYear()} - All right reserved
+          Made by <a href="https://github.com/4nubhav-v" className="underline"> Anubhav</a> 2024 - {new Date().getFullYear()}
         </motion.p>
       </aside>
     </footer>
