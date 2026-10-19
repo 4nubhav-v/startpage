@@ -49,7 +49,11 @@ function Header() {
       <div className="navbar-end pr-8">
         <div className="flex items-center gap-x-1">
           <div>
-            <a target="_blank" href="https://github.com/4nubhav-v/startpage">
+            <a
+              target="_blank"
+              aria-label="Link to my Github Repo"
+              href="https://github.com/4nubhav-v/startpage"
+            >
               <img src={Github} alt="" className="hidden h-5 w-5 dark:block" />
               <img
                 src={GithubDark}
