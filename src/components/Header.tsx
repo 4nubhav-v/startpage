@@ -38,15 +38,15 @@ function Header() {
   const { theme, setTheme } = useTheme();
   return (
     <header className="navbar bg-gb-bg-hard/40 border-gb-bg1 sticky top-0 z-10 border-b shadow-sm backdrop-blur-sm">
-      <div className="navbar-start pl-8">
-        <p className="text-sm font-bold italic">
+      <div className="navbar-start pl-2 lg:pl-8">
+        <p className="text-sm font-bold italic max-[413px]:text-xs">
           ♪ {data?.track} - {data?.artist}
         </p>
       </div>
       <div className="navbar-center">
         <HeaderSectionCenter />
       </div>
-      <div className="navbar-end pr-8">
+      <div className="navbar-end pr-2 lg:pr-8">
         <div className="flex items-center gap-x-1">
           <div>
             <a

@@ -27,9 +27,9 @@ function Card({
     <>
       <motion.div
         variants={lianimate}
-        className="card-hover bg-gb-bg-soft border-gb-bg1 hover:border-gb-green/80 w-full rounded-xl border p-5 lg:px-5 lg:py-8"
+        className="card-hover bg-gb-bg-soft border-gb-bg1 hover:border-gb-green/80 w-full rounded-xl border p-2 max-[413px]:p-14 lg:px-5 lg:py-8"
       >
-        <div className="mb-4 flex items-center gap-2 lg:gap-4">
+        <div className="mb-4 flex items-center gap-2 max-[413px]:justify-center lg:gap-4">
           <span className="text-gb-yellow" aria-hidden="true">
             {info.icon}
           </span>
@@ -41,7 +41,7 @@ function Card({
           {info.socialsInfo.map((link, index) => (
             <li key={index} className="links text-[10px] font-semibold">
               <a
-                className="text-gb-fg3 hover:text-gb-bright-green font-ioskeleymono text-sm transition-colors focus:outline-2 outline-gb-bright-green"
+                className="text-gb-fg3 hover:text-gb-bright-green font-ioskeleymono outline-gb-bright-green text-sm transition-colors focus:outline-2"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"

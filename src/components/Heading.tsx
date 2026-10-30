@@ -23,7 +23,7 @@ function Heading() {
         filter: "blur(2px)",
       }}
       animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-      className="from-gb-bright-green dark:from-gb-fg dark:to-gb-green to-gb-fg text-shadow-2xl bg-linear-to-r bg-clip-text p-4 text-center text-4xl font-bold tracking-tight text-transparent md:text-6xl"
+      className="from-gb-bright-green dark:from-gb-fg dark:to-gb-green to-gb-fg text-shadow-2xl bg-linear-to-r bg-clip-text p-4 text-center text-3xl sm:text-6xl font-bold tracking-tight text-transparent "
     >
       Welcome <span>{GetUser()}</span> &lt;3
     </motion.h1>

@@ -35,7 +35,7 @@ function HeaderSectionCenter() {
   }, []);
   return (
     <>
-      <div className="font-ibm-plex-sans px-2 text-sm font-semibold">
+      <div className="font-ibm-plex-sans px-2 text-sm font-semibold max-[413px]:text-xs">
         <NumberFlowGroup>
           <NumberFlow value={hour} format={{ minimumIntegerDigits: 2 }} />
           <NumberFlow
@@ -50,7 +50,9 @@ function HeaderSectionCenter() {
           />
         </NumberFlowGroup>
       </div>
-      <p className="px-2 text-sm font-semibold">{temperature}</p>
+      <p className="px-2 text-sm font-semibold max-[413px]:text-xs">
+        {temperature}
+      </p>
     </>
   );
 }
