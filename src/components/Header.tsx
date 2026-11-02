@@ -24,7 +24,7 @@ function Header() {
          */
         /* PRODUCTION
          */ const response = await fetch(
-          "https://first-fm-app.vercel.app/api/recents",
+          "https://media-api-server.vercel.app/api/recents",
         );
 
         const getdata = await response.json();
